@@ -29,6 +29,12 @@ default = ["std"]
 regexp = ["regex"]
 regexp_macros = ["regexp", "lazy_static"]
 verbose-errors = ["alloc"]
+peg = ["nom_peg"]
+
+
+[dependencies.nom_peg]
+path = "nom_peg"
+optional = true
 
 [dependencies.regex]
 version = "^1.0"
@@ -117,6 +123,10 @@ name = "named_args"
 
 [[test]]
 name = "overflow"
+
+[[test]]
+name = "peg"
+required-features = ["peg"]
 
 [[test]]
 name = "reborrow_fold"

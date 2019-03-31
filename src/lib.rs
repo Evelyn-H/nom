@@ -427,7 +427,7 @@ pub use self::str::*;
 #[cfg(feature = "peg")]
 extern crate nom_peg;
 pub mod peg {
-    pub use nom_peg::peg_grammar;
+    pub use nom_peg::grammar;
 }
 
 #[macro_use]

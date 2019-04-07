@@ -129,6 +129,10 @@ name = "peg"
 required-features = ["peg"]
 
 [[test]]
+name = "peg_json"
+required-features = ["peg"]
+
+[[test]]
 name = "reborrow_fold"
 
 [[test]]
